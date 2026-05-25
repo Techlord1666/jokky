@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Price List - JOKKY VENTURES</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Work+Sans:wght@400;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#e89156",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#c8c6c2",
+                        "inverse-on-surface": "#f8efea",
+                        "surface-container-high": "#efe6e2",
+                        "on-tertiary-fixed": "#2c1600",
+                        "on-surface": "#1e1b18",
+                        "surface": "#fff8f5",
+                        "on-secondary-container": "#636260",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#ffb688",
+                        "primary": "#914c16",
+                        "surface-container": "#f5ece7",
+                        "primary-fixed": "#ffdbc7",
+                        "surface-variant": "#e9e1dc",
+                        "on-secondary-fixed-variant": "#474744",
+                        "tertiary": "#7c5730",
+                        "outline-variant": "#d9c2b5",
+                        "surface-container-highest": "#e9e1dc",
+                        "background": "#fff8f5",
+                        "tertiary-fixed-dim": "#eebd8e",
+                        "tertiary-fixed": "#ffdcbd",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#733500",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#ffb688",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#61401b",
+                        "secondary": "#5f5e5b",
+                        "outline": "#877368",
+                        "on-tertiary-container": "#543411",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#e2dfdb",
+                        "on-primary-container": "#622c00",
+                        "surface-tint": "#914c16",
+                        "on-background": "#1e1b18",
+                        "surface-bright": "#fff8f5",
+                        "surface-container-low": "#fbf2ed",
+                        "on-primary-fixed": "#311300",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#cb9d70",
+                        "inverse-surface": "#34302c",
+                        "on-surface-variant": "#54433a",
+                        "surface-dim": "#e1d8d4",
+                        "on-secondary-fixed": "#1c1c1a",
+                        "secondary-fixed": "#e5e2de",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "xl": "80px",
+                        "margin-mobile": "16px",
+                        "xs": "4px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "price-display": ["Work Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-bold": ["Work Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "price-display": ["20px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "800"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "label-bold": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .egg-texture {
+            background-color: #fff8f5;
+            background-image: radial-gradient(#e9e1dc 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation Anchor (Shared Component) -->
+<header class="bg-surface dark:bg-surface-dim border-b border-outline-variant sticky top-0 z-40">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-7xl mx-auto">
+<div class="text-body-lg font-headline-lg font-bold text-primary dark:text-primary-fixed uppercase tracking-wider">JOKKY VENTURES</div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant font-body-md hover:text-primary-container transition-colors duration-200" href="#">Products</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">JOKKY VENTURES</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary-container transition-colors duration-200" href="#">About Us</a>
+</div>
+<button class="bg-primary text-on-primary font-label-bold text-label-bold px-md py-sm rounded-full active:opacity-80 active:scale-95 transition-all">
+                Call Us
+            </button>
+</nav>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop py-lg egg-texture relative overflow-hidden">
+<!-- Decorative Elements -->
+<div class="absolute -top-10 -right-10 opacity-20 transform rotate-12 pointer-events-none">
+<img class="w-64 h-64 object-contain" data-alt="A high-quality studio photograph of fresh, organic brown eggs sitting in a rustic wooden bowl. The lighting is soft and natural, emphasizing the smooth textures and earthy tones of the eggshells. The background is a clean, bright cream color that complements the warm agricultural aesthetic of the brand. Professional culinary photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB15wHzEJQeJ6bNYi48MSd1yiI-eESpF6BH7LOKvLjFe6QDtrPM57Fcg6911h2WkbJwiuxChHe3vmXBLMLmEMZ2S_j4Qi6AHBsDzTiIr4vFhvRgcGRgEQGQYl0U-GC1dVNDnXDe8WFDpA6hvQkrNNcF7e0grN7X2sX-s-BXmYz1bEv9Xyhk0PJqg0WFKu85nOvBtRo6i_a5n7zazTvV-x6sEvBSws-HU9uX6tYUWQS5wlwd0XOLWagIQtY_x2oq_-Deui3mVZ0EqrA"/>
+</div>
+<!-- Branding Header -->
+<section class="text-center mb-xl relative z-10">
+<div class="flex justify-center mb-sm">
+<span class="material-symbols-outlined text-primary text-[48px]" data-icon="egg">egg</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-xs">JOKKY VENTURES</h1>
+<p class="font-label-bold text-label-bold text-tertiary uppercase tracking-widest mb-lg">VENTURES</p>
+<div class="inline-block border-y border-outline-variant py-xs px-md">
+<span class="font-body-md italic text-on-surface-variant">Quality eggs, quality life</span>
+</div>
+</section>
+<!-- Main Title Section -->
+<section class="text-center mb-lg">
+<h2 class="font-display-lg text-display-lg text-primary-container uppercase tracking-[0.2em]">Price List</h2>
+<div class="flex justify-center mt-xs">
+<div class="w-16 h-1 bg-primary-container rounded-full"></div>
+</div>
+</section>
+<!-- Product Bento Grid / List -->
+<section class="bg-surface-container-lowest rounded-xl border border-outline-variant p-md md:p-lg space-y-md relative z-10">
+<!-- Category: Packed Eggs -->
+<div class="space-y-sm">
+<h3 class="font-headline-md text-headline-md text-primary-container border-b border-outline-variant pb-xs mb-sm">Premium Packed Eggs</h3>
+<!-- Product Row 1 -->
+<div class="flex justify-between items-end py-sm border-b border-surface-variant">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">6pcs Packed Egg</h4>
+<p class="font-body-md text-on-surface-variant">Half dozen fresh farm-laid eggs</p>
+</div>
+<div class="text-right">
+<span class="font-price-display text-price-display text-primary">N800</span>
+</div>
+</div>
+<!-- Product Row 2 -->
+<div class="flex justify-between items-end py-sm border-b border-surface-variant">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">12pcs Packed Egg</h4>
+<p class="font-body-md text-on-surface-variant">Standard dozen tray, farm fresh</p>
+</div>
+<div class="text-right">
+<span class="font-price-display text-price-display text-primary">N1,600</span>
+</div>
+</div>
+<!-- Product Row 3 -->
+<div class="flex justify-between items-end py-sm border-b border-surface-variant">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">15pcs Packed Egg</h4>
+<p class="font-body-md text-on-surface-variant">Family pack, selected large size</p>
+</div>
+<div class="text-right">
+<span class="font-price-display text-price-display text-primary">N2,000</span>
+</div>
+</div>
+<!-- Product Row 4 -->
+<div class="flex justify-between items-end py-sm border-b border-surface-variant">
+<div>
+<div class="flex items-center gap-xs">
+<h4 class="font-headline-md text-headline-md text-on-surface">30pcs Packed Egg</h4>
+<span class="bg-primary text-on-primary text-[10px] px-xs py-[2px] rounded-sm font-label-bold">BEST VALUE</span>
+</div>
+<p class="font-body-md text-on-surface-variant">Full crate for commercial or large families</p>
+</div>
+<div class="text-right">
+<span class="font-price-display text-price-display text-primary">N4,000</span>
+</div>
+</div>
+</div>
+<!-- Additional Services/Notes -->
+<div class="mt-lg pt-md bg-surface-container-low rounded-lg p-md">
+<div class="flex gap-sm items-start">
+<span class="material-symbols-outlined text-tertiary" data-icon="local_shipping">local_shipping</span>
+<div>
+<p class="font-label-bold text-label-bold text-tertiary">DELIVERY AVAILABLE</p>
+<p class="text-body-md text-on-surface-variant">Bulk orders enjoy free delivery within the metropolitan area.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Decorative Bottom Image -->
+<div class="mt-lg flex justify-between items-center opacity-40">
+<img class="w-32 h-32 object-cover rounded-full border-4 border-white" data-alt="A close-up artistic shot of cracked eggshells on a minimalist white stone surface. The lighting creates gentle shadows, highlighting the delicate organic curves and natural textures. The color palette is warm and inviting, consistent with the farm-to-table brand identity of a premium agricultural enterprise. Professional food photography aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7-azhzh1xahtGJK-MbWGQm-2jj9PhCziI3itFexDMXS2XapO8v8UWpONRp2o15RsniyhQ6CS68xH09YoLG0C9MC_FbiPzvyTSI-1G_1JfpmlFJk8MLDX8fkEhFEmfkUrytxg8mx_rgXpe9iySqf_MTFCAywFEKBYX55BCJEEFPveLuF0l4WXwjBSgiOUjcFZiWq3xSWb1ARnjLq6Kbs-CJKCMxcGLWMiioeVcg3UysKDEsAEJSFWGvlkWqgdPiSc52z8McfCvf8g"/>
+<span class="material-symbols-outlined text-[64px] text-outline-variant" data-icon="verified">verified</span>
+</div>
+</main>
+<!-- Sticky Footer CTA (Custom Shared Component) -->
+<div class="fixed bottom-0 w-full z-50 bg-primary dark:bg-primary-container shadow-lg flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop py-4 space-y-md md:space-y-0">
+<div class="flex flex-col md:flex-row items-center gap-sm md:gap-lg">
+<div class="bg-on-primary bg-opacity-20 px-lg py-sm rounded-full flex items-center gap-sm cursor-pointer hover:bg-opacity-30 transition-all active:scale-95">
+<span class="font-headline-md text-headline-md text-on-primary">ORDER NOW!</span>
+</div>
+<div class="flex flex-col items-center md:items-start text-on-primary">
+<span class="font-label-bold text-label-bold opacity-90 uppercase">Call / WhatsApp</span>
+<span class="font-headline-md text-headline-md">08121709150</span>
+</div>
+</div>
+<div class="flex flex-col items-center md:items-end text-on-primary text-sm gap-xs">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]" data-icon="call">call</span>
+<span class="font-body-md">08121709150</span>
+</div>
+</div>
+</div>
+<!-- Padding for fixed footer -->
+<div class="h-32 md:h-24"></div>
+<!-- Final Branding Footer (Shared Component) -->
+<footer class="bg-surface-container py-xl px-margin-mobile md:px-margin-desktop text-center md:text-left border-t border-outline-variant">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-lg">
+<div class="max-w-xs">
+<div class="text-headline-md font-headline-md text-primary mb-sm uppercase">JOKKY VENTURES</div>
+<p class="text-body-md text-on-surface-variant">Providing fresh, high-quality egg products from our farm directly to your table.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl w-full md:w-auto">
+<div>
+<h5 class="font-label-bold text-label-bold text-tertiary mb-sm uppercase">Contact Us</h5>
+<ul class="space-y-xs text-on-surface-variant"><li>08121709150</li></ul>
+</div>
+<div>
+<h5 class="font-label-bold text-label-bold text-tertiary mb-sm uppercase">Location</h5>
+<p class="text-on-surface-variant">Adjacent Federal Medical Centre, Birnin Kebbi, Kebbi State</p>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-lg pt-md border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-md">
+<p class="text-label-bold text-on-surface-variant opacity-70">© 2024 JOKKY VENTURES. All rights reserved.</p>
+<div class="flex gap-md items-center">
+<span class="font-label-bold text-primary cursor-pointer hover:underline">@AJAY_NATUREL</span>
+</div>
+</div>
+</footer>
+</body></html>
